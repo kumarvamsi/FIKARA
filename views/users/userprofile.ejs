@@ -1,0 +1,58 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+   <!-- profile  -->
+    <div class="profile" id="profile"style="height: 250px;">
+          <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-10">
+                      <p class="title"><b>Welcome to 
+                            <span style="color:white"><%= foundAuthor.username %>'s</span>
+                      </b>profile</p>
+                      <div class="userdata">
+                            <p><b style="font-size: 18px;">name: </b><%= foundAuthor.username %></p>
+                            <p><b  style="font-size: 18px;">email: </b><%= foundAuthor.phonenumber%> </p>      
+                      </div>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+          </div>
+      </div>
+      <!-- posts -->
+      <div class="text">
+          <p ><%=foundAuthor.username%>'s Thoughts...</p>
+      </div>
+      
+      <div class="posts">
+          <div class="row">
+                <%   foundIdeas.forEach(function(user){ %>
+                      <% if(user.author.username === foundAuthor.username ){ %>
+                             
+                            <div class="col-md-3">
+                                  <div class="post">
+                                        <h2><b><%= user.title.substring(0,25) %></b></h2><hr>
+                                        <i style="font-weight: 600;"><%= user.created.toDateString() %></i>
+                                        <p><%= user.description.substring(0,100) %></p>
+                                        <br><br>
+                                        <a class="btn btn-outline-dark "href="/ideas/<%= user.id%> ">view</a>
+                                        
+                                  </div>
+                                  
+                            </div>
+                           
+                       <%}%>
+
+                 <% }); %>
+                 
+          </div>  
+          
+          </div>
+
+  </div>  
+   
+</div>
+
+<%- include ('../partials/footer') %>

@@ -1,0 +1,119 @@
+<%- include ('partials/header') %>
+ 
+    <div class="image">
+      <div class="container" style="position:relative" >
+        <% if(success && success.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= success %>
+          </div>
+        <% } %>
+        <!-- deletedProfile message -->
+        <% if(deletedProfile && deletedProfile.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= deletedProfile %>
+          </div>
+        <% } %>
+        <% if(welcomeBack && welcomeBack.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= welcomeBack %> <%= currentUser.username %>
+          </div>
+        <% } %>
+        <!-- permission denied -->
+        <% if(permission && permission.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= permission %> 
+          </div>
+        <% } %>
+        <!-- commentPermission denied -->
+        <% if(commentPermission && commentPermission.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= commentPermission %> 
+          </div>
+        <% } %>
+ 
+        <img style="margin-top: 10px;" src="/images/banner2.png" alt="error occured" width="100%" height="auto">
+        <div class="centered">
+          <% if(!currentUser) {%>
+          <a href="/register" >Join Now</a>
+          <%  } %>
+       <%  if(currentUser){ %>
+            <div class="centered1">
+              <a href="/ideas/new">Get Started</a> 
+            </div>
+           
+          <% } %> 
+        </div>
+      </div>
+    </div>
+    
+     <!--fetching ideas from the user  -->
+     <div class="container">
+       <div class="homedata">
+        <p>some of our popular thoughts</p>
+       </div>
+     
+      <div class="posts">
+        <div class="row">
+              <%   foundIdeas.forEach(function(user){ %>
+                    <% if(user.author.username === foundAuthor.username){ %>
+                          <div class="col-md-3">
+                                <div class="post">
+                                      <h2><b><%= user.title.substring(0,25) %></b></h2><hr>
+                                      <i style="font-weight: 600;"><%= user.created.toDateString() %></i>
+                                      <p><%= user.description.substring(0,100) %></p>
+                                      <br><br>
+                                      <a class="btn btn-outline-dark "href="/ideas/<%= user.id%> ">view</a>
+                                      
+                                </div>
+                                
+                          </div>
+                         
+                     <%}%>
+  
+               <% }); %>
+               
+        </div>  
+        
+        </div>
+  
+  
+     </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <div class="container">
+      <div class="homeposts">
+        <div class="row">
+          <% foundIdeas.forEach(function(user){ %>
+            <div class="col-md-3">
+              <div class="homepost">
+               
+                <% if(user.author.username === foundAuthor.username){ %>
+                  <p>taem fikara</p>
+                  <%= user.title %>
+                  <%= user.description %>
+                  <a href="/ideas/<%=user._id%>" class="btn btn-outline-dark">viewIdea</a>
+                <%  } %>
+              </div>
+            </div>   
+         <% })%>
+        </div>
+       
+      </div>
+    </div>  -->
+   
+    
+<%- include ('partials/footer') %>   

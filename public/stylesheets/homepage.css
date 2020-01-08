@@ -1,0 +1,681 @@
+/* =========HEADER CSS======== */
+body{
+    background-color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbarSupportedContent ul{
+    margin: 0;
+}
+#navbarSupportedContent ul li{
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+#navbarSupportedContent ul li a{
+    color: black;
+}
+.signup li a:hover{
+    color: white;
+    background-color: black;
+    box-shadow: -4px 3px 12px -3px rgba(0,0,0,0.75);
+    
+ } 
+
+#navbarSupportedContent ul li a:hover{
+    color: white;
+    background-color: black;
+}
+.icon i{
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    #navbarSupportedContent ul{
+        padding: 2px;
+    }
+    #navbarSupportedContent ul li {
+        padding: 5px;
+        text-align: center;
+        background-color: darkslategray;
+    };
+};
+
+.search form input[type-text]{
+    width: 20px;
+}
+.signup li a{
+    background-color:#e31e1e;
+    padding: 10px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* ========FOOTER CSS========= */
+.elements ul li a{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.register a{
+    background-color: #e31e1e;
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+   
+}
+.page-footer{
+   position: relative;
+   top: 30px;
+   
+}
+.page-footer ul{
+    background-color: #1a1c1c;
+}
+.page-footer ul li{
+    font-size: 30px;
+    color:white;
+    padding: 20px;
+}
+.page-footer ul li a{
+
+    display: inline block;
+}
+.footer-copyright {
+    background-color:#291b1b;
+}
+/* copy rights */
+.Copyright{
+    position: relative;
+    margin-top:10px;
+}
+.Copyright p{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+.line hr.new1{
+    border-top: 1px solid black;
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    .elements ul li a{
+        font-size: 12px;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .page-footer ul li{
+        font-size: 15px;
+        color:white;
+        padding: 10px;
+    }
+    .Copyright p{
+        font-size: 15px;
+    }
+    
+};
+/* ========HOMEPAGE CSS========= */
+/* placing text on image */
+.image .container {
+    position: relative;
+   
+}
+.centered {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+.image a{
+    background-color:white;
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.image a:hover{
+    box-shadow: -4px 3px 15px -3px rgba(0,0,0,0.75);
+}
+@media only screen and (max-width: 500px) {
+    .image a{
+        padding: 4px;
+        font-size: 10px;
+    }
+    
+};
+
+.data{
+    padding: 22px;
+}
+
+/* ======signUp page CSS */
+#formdata{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+}
+.signup{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+#formdata button{
+    border-radius: 25px;
+    
+}
+form{
+    padding: 20px;
+    margin-top: 50px;
+}
+.mainform{
+    padding: 50px;
+}
+#formdata form-group{
+    background-color: darkseagreen;
+}
+@media only screen and (max-width: 500px) {
+   #formdata{
+       width: auto;
+       margin-left: -25px;
+       margin-right: -25px;
+   }
+};
+.conatiner{
+
+};
+.homeposts{
+
+}
+.homepost{
+    background-color: wheat;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+.homedata p{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+/* Loginpage CSS */
+
+.loginform{
+ 
+}
+.logindata{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius:10px ;
+}
+.logindata p{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.logindata button{
+    border-radius: 20px;
+}
+.loginform{
+    padding: 50px;
+    margin-top: 0px;
+}
+.fp{
+    padding: px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.fp p1,p2{
+
+    font-size: 15px;
+}
+@media only screen and (max-width: 500px) {
+    .logindata{
+        width: auto;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+ };
+
+ /* forgotpasswordpage CSS */
+ .forgotform{
+    padding:50px;
+ }
+ .forgotdata{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius:10px ;
+    
+
+ }
+ .forgotdata p{
+     font-size: 30px;
+     font-weight: 600;
+     text-align: center;
+ }
+ 
+ .forgotform{
+     padding: 50px;
+     
+ }
+ .forgotdata button{
+     border-radius: 25px;
+ }
+ @media only screen and (max-width: 500px) {
+    .forgotdata{
+        width: auto;
+        margin-left: -25px;
+        margin-right: -25px;
+    }   
+ };
+/* resetpasswordpage CSS */
+.forgotpasswordform{
+    padding: 50px;
+}
+.forgotpassworddata{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius:10px ;
+    
+}
+.forgotpasswordform p{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.forgotpasswordform{
+    padding: 50px;
+}
+.forgotpassworddata button{
+    border-radius: 25px;
+}
+@media only screen and (max-width: 500px) {
+    .forgotpassworddata{
+        width: auto;
+        margin-left: -25px;
+        margin-right: -25px;
+    }  
+     
+  
+ };
+ @media only screen and (max-width: 1000px) {
+    .forgotpassworddata{
+        width: 200px;
+        margin-left: -25px;
+        margin-right: -25px;
+    }  
+     
+  
+ };
+ /* profilepage CSS */
+ .container{
+    
+ }
+ .profile {
+    box-shadow: -1px 1px 8px -4px rgba(0,0,0,0.75);
+    text-align: center;
+    font-family: arial;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 350px;
+    
+ }
+ .text p{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+.post{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 410px;
+}
+.post h2{
+    font-size: 25px;
+}
+.post p{
+    font-size: 15px;
+}
+ .title{
+    background-color:black;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+    
+}
+p{
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.buttons{
+    display: ruby;
+    position: inherit;
+    top: -55px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+   .profile img{
+       width: 40%;
+   }
+   .profile{
+       height: 400px;
+   }
+   .post{
+       margin-top: 2px;
+   }
+   
+  
+ };
+
+#user{
+    background-color:white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    
+}
+/* addNewIdea CSS */
+.newidea{
+
+}
+.newideaform{
+    background-color:white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+
+}
+.newideaform p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+/* viewideaspage CSS */
+
+.category{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+  
+}
+.category p{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px;
+}
+.posts{
+    margin-top: 20px;
+}
+.posts h5{
+    padding: 10px;
+    font-weight: 600;
+    margin-left: 400px;
+    text-align: center;
+}
+.post{
+    height: 410px;
+}
+.name{
+    margin-bottom: 10px;
+}
+.name a{
+    color: black;
+    font-weight: 500;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+.viewtitle p{
+    font-weight: 700;
+    font-size: 25px;
+}
+@media only screen and (max-width: 1000px) {
+    .post{
+        margin-top: 10px;
+    }
+    .posts h5{
+        margin-left: 5px
+    }
+    
+   
+  };
+
+/* searchpage CSS */
+.container{}
+.search{
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.search form{
+    text-align: center;
+    margin-left: 30px;
+}
+.form-inline .form-group{
+    text-align: center;
+    margin-left: 360px;
+}
+
+@media only screen and (max-width: 1000px) {
+   
+    .form-inline .form-group{
+        text-align: center;
+        margin-left: 0px;
+        
+    }
+   
+  };
+  .form-inline .form-group input{
+    
+}
+.search p{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1;
+    padding: 8px;
+}
+/* showideapage.CSS */
+.container{}
+.ideadata{
+    background-color: white;
+    box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+   
+}
+.description{
+    text-align: left;
+    padding: 20px;
+    font-size: 15px;
+}
+.ideatitle{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align:center;
+    font-weight: 600;
+}
+.author{
+    font-size:16px ;
+    padding: 20px;
+}
+.author b{
+    background-color:cadetblue;
+    padding: 6px;
+    border-radius: 10px;
+    color: white;
+}
+.comment{
+    font-size: 15px;
+}
+.delete{
+    margin-top: -50px;
+    margin-left: 22px;
+}
+.ideadelete{
+    margin-top: -50px;
+    margin-left: 156px;
+}
+#del{
+    margin-top: 5px;
+}
+@media only screen and (max-width: 500px) {
+   
+    .ideadelete{
+        margin-top: 50px;
+        margin: auto;
+        margin-left: -20px;
+      
+    }
+   
+  };
+  /*aboutUs CSS  */
+  .container{
+
+  }
+  .aboutus{
+    background-color: black;
+    margin-top: 10px;
+    padding: 20px;
+  }
+  .contactdetails{
+      background-color: cornslk;
+     
+      
+  }
+  .aboutus img{
+      margin-top: 40px;
+     
+  }
+  .aboutus p{
+      color: white;
+      padding: 5px;
+      font-size: 25px;
+  }
+  .aboutusdata p{
+      padding: 10px;
+  }
+  .aboutusdata1 p{
+      text-align: left;
+      font-size: 19px;
+      padding: 50px;
+      font-weight: 500;
+      line-height: 2;
+      margin-top: -30px;   
+  }
+  @media only screen and (max-width: 500px) {
+   
+    .aboutusdata1 p{
+        padding: 20px
+    }
+   
+  };
+  /* contact CSS */
+  .contactdetails {
+      background-color: darksalmon;
+  }
+  .contactdetails p{
+      font-size: 20px;
+  }
+  /* notes CSS */
+  .container{}
+  .notes{
+      background-color: black;
+      color: white;
+      padding: 40px;
+  }
+  .notes h1{
+      background-color: white;
+      color: black;
+      text-align: center;
+      font-weight: 600;
+  }
+  .notes p{
+      font-weight: 500;
+      letter-spacing: 1px;
+  }
+  @media only screen and (max-width: 500px) {
+   
+    .notes{
+        padding: 30px;
+    }
+    .notes h1{
+        font-size: 20px;
+    }
+   
+  };
+
+  /* help CSS */
+  .container{}
+  .help{
+      background-color: black;
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
+  }
+  .helpimage{
+      margin-top: 30px;
+  }
+  .helpdata{
+    padding: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .helpdata h2{
+      font-weight: 600;
+      padding: 5px;
+  }
+  @media only screen and (max-width: 500px) {
+   
+    .helpdata{
+        padding: 20px
+    }
+   
+  };
+  /* alert messages */
+  .container{
+
+  }
+  .alert{
+      background-color: black;
+      color: white;
+  }
+/* userprofile CSS

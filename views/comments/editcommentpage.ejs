@@ -1,0 +1,29 @@
+<%- include ('../partials/header') %>
+
+  
+<div class="container">
+    <div class="newidea">
+        <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6">
+            <form  action="/ideas/<%= idea_id %>/comments/<%= comment._id %>?_method=PUT" method="POST" class="newideaform">
+                <P>Edit Comment</P>
+                <div class="form-group">
+                    <textarea rows="5" type="text" class="form-control" name="comment[text]"required><%= comment.text %></textarea>
+                </div>
+                <button class="btn btn-dark btn-block btn-md">Submit</button><br>
+                <a href="/ideas/<%=idea_id %>"class="btn btn-outline-info btn-sm" style="font-size: 12px;">goBack</a>
+            </form>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+      
+    </div>
+</div>
+
+
+<%- include ('../partials/footer') %>

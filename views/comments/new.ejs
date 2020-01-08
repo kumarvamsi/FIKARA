@@ -1,0 +1,44 @@
+<%- include ('../partials/header') %>
+<!-- <link rel="stylesheet" type="text/css" href="..stylesheets/homepage.css"> -->
+  
+<div class="container">
+    <div class="newidea">
+        <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6">
+            <form  action="/ideas/<%=idea.id %>/comments" method="POST" class="newideaform">
+                <P>Add Comment</P>
+                <div class="form-group">
+                    <textarea rows="5" type="text" class="form-control" name="comment[text]" placeholder="enter comment" required></textarea>
+                </div>
+                <button class="btn btn-dark btn-block btn-md">Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+      
+    </div>
+</div>
+
+
+
+  <!-- <div class="newform" style="padding: 30px;">
+    <div class="container" style="padding: 30px;">
+        <h1 style="text-align: center;">Add new Idea to <%= idea.name %></h1>
+        <form>
+            <div class="form-group">
+                <input >
+            </div>
+            <button class="btn btn-primary btn-block">Submit</button>
+        </form>
+        <br>
+        <a href="/ideas" class="btn btn-success">goBack</a>
+    </div> 
+</div>  -->
+
+
+<%- include ('../partials/footer') %>

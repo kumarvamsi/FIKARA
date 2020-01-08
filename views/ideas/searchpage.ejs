@@ -1,0 +1,103 @@
+<%- include ('../partials/header') %>
+
+    <div class="container">
+       <div class="search">
+        <P>Search by Category</P>
+        <form action="/ideas" method="GET" class="form-inline " style="margin: auto;" >
+          <div class="form-group">
+            <input type="text" name="search" placeholder="search idea" class="form-control mr-2"><br>
+            <button class="btn btn-outline-dark" >search</button>
+          </div>             
+      </form>
+      <div class="categories ">
+        
+        <a href="/ideas?search=mobile" class="m-2 btn btn-outline-danger">Mobile</a>
+        <a href="/ideas?search=web" class=" mr-2 btn btn-outline-success">Web</a>
+        <a href="/ideas?search=game" class=" mr-2 btn btn-outline-info">Gaming</a>
+        <a href="/ideas?search=app" class=" mr-2 btn btn-outline-dark">Others</a>
+      </div>
+       </div>
+    </div>
+
+<!-- footer -->
+
+<footer style="margin-top:160px;" class="page-footer  pt-4">
+  <div class="container">
+      <!-- elements -->
+     
+    <ul class="list-unstyled list-inline text-center">
+       <div class="elements">
+          <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                  <a href="/aboutUs">About us</a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="/contact">Contact</a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="/notes">Notes</a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="/help">Help</a>
+              </li>
+              <li class="list-inline-item">
+                  <div class="register">
+                      <a href="/register" >Register</a>
+                  </div>
+                 
+              </li>
+          </ul>
+       </div> 
+       <div class="line">
+           <div class="container">
+               <div class="container">
+                  <div class="container">
+                      <div class="container">
+                          <div class="container">
+                              <div class="container">
+                                  <hr class="new1">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+             
+           </div>
+         
+       </div>
+       <!-- social media icons -->
+      <li class="list-inline-item">
+        <a >
+          <i class="fa fa-facebook "> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a >
+          <i class="fa fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a >
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a >
+          <i class="fa fa-youtube"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a >
+          <i class="fa fa-reddit"> </i>
+        </a>
+      </li>
+      <div class="Copyright">
+          <P style="font-size: 15px;padding: 5px;">
+              @ 2020 Copyright : fikara.com
+          </P>
+    </ul>
+    
+    </div>
+   
+  </div>
+</footer>

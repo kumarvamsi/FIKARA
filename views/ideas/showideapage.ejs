@@ -1,0 +1,136 @@
+<%- include ('../partials/header') %>
+
+
+<div class="container">
+   <!-- comment success message -->
+   <% if(commentSuccess && commentSuccess.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= commentSuccess %>
+      </div>
+    <% } %>
+    <!-- comment updated message -->
+    <% if(updatedComment && updatedComment.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= updatedComment %>
+      </div>
+    <% } %>
+    <!-- comment deleted message -->
+    <% if(deletedComment && deletedComment.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= deletedComment %>
+      </div>
+    <% } %>
+    <!-- updatedIdea message -->
+    <% if(updatedIdea&& updatedIdea.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= updatedIdea %>
+      </div>
+    <% } %>
+
+      <div class="showidea">
+         <div class="ideadata">
+            <h4 class="ideatitle"><%= idea.title %></h4><hr>
+            <i style="text-align: left;" class="description"><%=idea.created.toDateString() %></i>
+            <p class="description"><%=idea.description%></p>
+            <a style="text-decoration: none;" href="/user/<%= idea.author.id %>">
+               <p class="author"><span style="color:black">posted by</span> <b><%= idea.author.username %> </b></p>
+            </a> 
+            
+            <!-- comments section -->
+            <hr><P style="font-weight: 600;">Comments section</P><hr>
+            <%  idea.comments.forEach(function(comment){ %>
+                  <p class="comment">
+                     <strong><%= comment.author.username %></strong> - <%= comment.text %>
+                  </p>
+                  <%  if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+                     <a  style="font-size: 10px;" class="btn btn-outline-success btn-sm"  href="/ideas/<%= idea._id%>/comments/<%= comment._id%>/edit">Edit</a>
+                     <form action="/ideas/<%= idea._id%>/comments/<%= comment._id%>?_method=DELETE" method="POST" class="delete">
+                        <button style="font-size: 10px;" id="del" class="btn btn-outline-danger btn-sm" >delete</button>
+                     </form>
+                  <% } %>
+                  <hr>
+             <% }) %>
+             <!-- idea edit and delete buttons -->
+             <a style="font-size: 12px;" href="/ideas/<%=idea._id %>/comments/new" class="btn btn-outline-dark mr-1">add</a>
+              <a style="font-size: 10px;"href="/ideas" class="btn btn-outline-info mr-1">goBack</a>
+            <%  if(currentUser && idea.author.id.equals(currentUser._id)){ %>
+                  <a style="font-size: 10px;" href="/ideas/<%=idea._id %>/edit" class="btn btn-outline-success mr-1">Edit</a>
+                     <form action="/ideas/<%= idea._id%>?_method=DELETE" method="POST" class="ideadelete" >
+                        <button style="font-size: 10px;" class="btn btn-outline-danger mr-1">delete</button>
+                     </form>
+               <% } %>
+            </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="card bg-light text-center"  >
+      <p>idea by <b><%= idea.author.username %> </b></p>
+    <h2><%= idea.title %></h2>
+       <div class="card-body text-center">
+          <p class="card-text"><%=idea.description%></p>
+          <i><%=idea.created.toDateString() %></i><br>
+        <br>
+      <P><b>comments goes here....</b></P>
+      <hr width="400px" >
+      <%  idea.comments.forEach(function(comment){ %>
+         <div class="card bg-light text-center">
+            <p class="card-text">
+               <strong><%= comment.author.username %></strong> - <%= comment.text %>
+            </p >
+            <%  if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+            <a  class="btn btn-success"  href="/ideas/<%= idea._id%>/comments/<%= comment._id%>/edit">Edit comment</a>
+            <br><br>
+            <form action="/ideas/<%= idea._id%>/comments/<%= comment._id%>?_method=DELETE" method="POST">
+
+               <button class="btn btn-danger" >delete</button>
+
+            </form>
+            <% } %>
+          <br>
+         </div>
+              <% }) %>
+       <hr>
+        buttons for  sending pages -->
+      <!--  <a href="/ideas/<%=idea._id %>/comments/new" class="btn btn-primary">add comment</a>
+        <a href="/ideas" class="btn btn-info">goBack</a><br>
+        <br>
+      <%  if(currentUser && idea.author.id.equals(currentUser._id)){ %>
+            <a href="/ideas/<%=idea._id %>/edit" class="btn btn-success">Edit</a><br><br>
+               <form action="/ideas/<%= idea._id%>?_method=DELETE" method="POST" >
+                  <button class="btn btn-danger">delete</button>
+               </form>
+         <% } %>
+
+        <br>
+       
+   </div> -->
+</div>
+ 
+
+<%- include ('../partials/footer') %>
+

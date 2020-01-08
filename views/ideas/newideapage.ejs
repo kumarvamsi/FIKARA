@@ -1,0 +1,43 @@
+<%- include ('../partials/header') %>
+
+<!-- <link rel="shortcut icon" type="image/png" href="images/logo.png" > -->
+  
+  
+
+<div class="container">
+    <div class="newidea">
+        <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6">
+            <form action="/ideas" method="POST" class="newideaform">
+                <P>Add New Idea</P>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="title" placeholder="enter title" required>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control"  rows="6" name="description"  placeholder="enter description..." required></textarea>
+                </div>
+                <button class="btn btn-dark btn-block btn-md">Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+      
+    </div>
+</div>
+
+<!-- <div class="newform" style="padding: 30px;">
+    <div class="container" style="padding: 30px;">
+        <h1 style="text-align: center;">Add new Idea</h1>
+        
+        <br>
+        <a href="/ideas" class="btn btn-success">goBack</a>
+    </div> 
+</div>  -->
+
+
+<%- include ('../partials/footer') %>

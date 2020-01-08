@@ -1,0 +1,39 @@
+<%- include ('../partials/header') %>
+
+  <div class="container">
+    <% if(mail  && mail.length > 0){ %>
+      <div class="alert alert-danger" role="alert" >
+            <%= mail %>
+      </div>
+    <% } %>
+  </div>
+
+
+  <div class="forgot">
+      <div class="row">
+          <div class="col-lg-4 col-sm-1">
+
+          </div>
+          <div class="col-lg-4 col-sm-1">
+            <div class="forgotform">
+              <form action="/forgot" method="POST" class="forgotdata">
+                <p>Reset Password</p>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="enter your email" >
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block btn-md">submit</button>
+                </div>
+                <a href="/login">GoBack</a>
+            </form>
+            </div>
+             
+          </div>
+          <div class="col-lg-4 col-sm-1">
+            
+          </div>
+      </div>
+  </div>
+ 
+<%- include ('../partials/footer') %>
+

@@ -1,0 +1,87 @@
+<%- include ('../partials/header') %>
+
+
+    <div class="container">
+      <% if(updatedProfile && updatedProfile.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                  <%= updatedProfile %>
+            </div>
+       <% } %>
+
+     <!-- profile  -->
+      <div class="profile">
+            <div class="row">
+                  <div class="col-lg-1">
+
+                  </div>
+                  <div class="col-lg-10">
+                        <p class="title"><b>
+                              <span style="color:white"><%= currentUser.username %>'s</span>
+                        </b>profile</p>
+                        <div class="userdata">
+                              <p><b style="font-size: 18px;">name: </b><%= currentUser.username %></p>
+                              <p><b  style="font-size: 18px;">email: </b><%= currentUser.email %> </p>
+                              <p><b  style="font-size: 18px;">phone: </b><%= currentUser.phonenumber %></p>
+                              
+                        </div>
+                       <div class="buttons" id="content">
+                              <a href="/users/<%= currentUser._id%>/edit" class="btn btn-outline-success" >edit</a>
+                              <form action="/users/<%= currentUser._id%>?_method=DELETE" method="POST" >
+                                    <button class="btn btn-outline-danger" >delete</button>
+                              </form>
+                        </div>
+                        
+                  </div>
+                  <div class="col-lg-1">
+
+                  </div>
+            </div>
+        </div>
+        <!-- posts -->
+        <div class="text">
+            <p >Thoughts You Posted...</p>
+        </div>
+        
+        <div class="posts">
+            <div class="row">
+                  <%   user.forEach(function(userIdea){ %>
+                        <% if(currentUser._id.equals(userIdea.author.id)){ %>
+                               
+                              <div class="col-md-3">
+                                    <div class="post">
+                                          <h2><b><%= userIdea.title.substring(0,25) %></b></h2><hr>
+                                          <i style="font-weight: 600;"><%= userIdea.created.toDateString() %></i>
+                                          <p><%= userIdea.description.substring(0,100) %></p>
+                                          <br><br>
+                                          <a class="btn btn-outline-dark "href="/ideas/<%= userIdea.id%> ">view</a>
+                                          
+                                    </div>
+                                    
+                              </div>
+                             
+                         <%}%>
+
+                   <% }); %>
+                   
+            </div>  
+            
+            </div>
+
+    </div>  
+      
+
+
+
+
+
+
+    
+
+
+  
+ 
+
+   
+</div> 
+
+<%- include ('../partials/footer') %>

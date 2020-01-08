@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- bootstrap CDN goes here..... -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- bootstrap CDN ends here -->
+<!-- font awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/homepage.css">
+    <link rel="shortcut icon" type="image/png" href="images/f.png" width="120%">
+    <title> Fikara </title>
+</head>
+<body >
+ 
+<!-- navigation bar goes here..... -->
+    
+
+<nav class="navbar navbar-expand-lg ">
+    <div class="container">
+        <a class="navbar-brand mr-sm-5" href="/">
+            <img src="/images/F.png" height="40" width="40" alt="error occured">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="icon">
+            <i class="fa fa-navicon" ></i>
+        </div>    
+        </button>
+     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/search"><i class="fa fa-search"></i><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ideas">View</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ideas/new">Add</a>
+            </li>
+            <% if(!currentUser){%>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <div class="signup">
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </div>
+            
+            <%} else {%>
+            <li class="nav-item">
+                <a class="nav-link" href="/users/currentUser.id">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+           <%}%>
+          </ul> 
+        </div>
+    </div>
+  
+  </nav>
+       
+<!-- navigation bar ends here..... -->
+

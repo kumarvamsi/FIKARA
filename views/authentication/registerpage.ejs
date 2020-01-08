@@ -1,0 +1,52 @@
+<%- include ('../partials/header') %>
+
+<!-- flash messages -->
+<div class="container">
+     <% if(error && error.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                <%= error %>
+          </div>
+     <% } %>
+</div>
+
+     <div class="containe">
+        <div class="row">
+             <div class="col-lg-4 col-sm-1">
+
+             </div>
+             <div class="col-lg-4 col-sm-10">
+               <div class="mainform">
+                    <form action="/register" method="POST" class="" id="formdata">
+                         <p class="signup">signUp</p>   
+                         <div class="form-group">
+                              <input type="text" class="form-control" name="username" placeholder="enter username" required>
+                             </div>
+                             <div class="form-group">
+                              <input type="tel" class="form-control" name="phonenumber" placeholder="enter phonenumber" required>  
+                             </div>
+                             <div class="form-group">
+                              <input type="email" class="form-control" name="email" placeholder="enter email" required>
+                             </div>
+                             <div class="form-group">
+                              <input type="password" class="form-control" name="password" placeholder="enter password" required>
+                             </div>
+                             <div class="form-group">
+                                  <button class="btn btn-primary btn-block btn-md">Get Started</button>
+                             </div>
+                             <div class="form-group" id="link">
+                                  <p class="link">already a member<b><a href="/login" style="color: black;" > Login</a></b></p>
+                             </div>
+                        </form>
+                  </div>
+          </div>
+          <div class="col-lg-4 col-sm-1">
+                  
+          </div>
+        </div>  
+        
+         
+     </div>
+
+   
+<!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required -->
+<%- include ('../partials/footer') %>

@@ -1,0 +1,46 @@
+<%- include ('../partials/header') %>
+
+  
+
+<div class="container">
+        
+        <% if(error && error.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+                 <%= error %>
+          </div>
+        <% } %>
+</div>       
+
+<div class="row">
+        <div class="col-lg-4 col-sm-1">
+
+        </div>
+        <div class="col-lg-4 col-sm-10">
+        <div class="loginform">
+                <form action="/login" method="POST" class="logindata">
+                        <p>Login</p>   
+                        <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="enter username" required>
+                        </div>
+                        <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="enter password" required>
+                        </div>
+                        <div class="form-group">
+                                <button class="btn btn-primary btn-block btn-md">submit</button>
+                        </div>
+                        <div class="fp">
+                                <p1><a href="/forgot" >forgot password</a></p1><br>
+                                <p2>dont have an account<b><a href="/register" style="color: black;"> signUp</a></b></p2>
+                        </div>
+                        
+                </form>
+        </div>
+        
+        </div>
+        <div class="col-lg-4 col-sm-1">
+                
+        </div>
+</div>
+
+
+<%- include ('../partials/footer') %>

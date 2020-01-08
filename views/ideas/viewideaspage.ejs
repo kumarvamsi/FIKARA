@@ -1,0 +1,100 @@
+<%- include ('../partials/header') %>
+
+  <div class="container">
+    <!-- messages -->
+    <% if(success && success.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= success %>
+      </div>
+    <% } %> 
+    <!-- deletedIdea message -->
+   <% if(deletedIdea && deletedIdea.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+             <%= deletedIdea %>
+      </div>
+    <% } %>
+   <!-- category elements -->
+    <div class="category ">
+      <P>View by Category</P>
+      <a href="/ideas?search=mobile" class="m-2 btn btn-outline-danger">Mobile</a>
+      <a href="/ideas?search=web" class=" mr-2 btn btn-outline-success">Web</a>
+      <a href="/ideas?search=gaming" class=" mr-2 btn btn-outline-info">Gaming</a>
+      <a href="/ideas?search=app" class=" mr-2 btn btn-outline-dark">Others</a>
+    </div>
+ 
+  <!-- posts -->
+  <div class="posts">
+       <div class="row">
+         <!-- message -->
+         <%  if(noMatch !== undefined) { %>
+
+          <h5 ><%= noMatch%></h5> 
+   
+          <% } %>
+          <% foundIdeas.forEach(function(idea) { %>
+              <div class="col-md-3">
+                <div class="post">
+                        <p style="padding-top: 0;">idea by
+                        <a style="color: white;;font-weight: 500;background-color: cadetblue;border-radius: 5px;padding: 8px;text-decoration: none;" href="/user/<%= idea.author.id %>" >
+                          <b><%= idea.author.username %></b>
+                        </a>
+                        </p> 
+                      <div class="viewtitle">
+                        <p ><%= idea.title.substring(0,25) %></p><hr>
+                      </div>
+                      <i style="font-weight: 600;"><%=idea.created.toDateString() %></i><br>
+                      <p class="card-text"><%=idea.description.substring(0,100)%></p>
+                      <a href="/ideas/<%=idea._id%>" class="btn btn-outline-dark">viewIdea</a>
+                </div>
+          </div> 
+      <% }) %>
+    </div>
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+    
+  
+ 
+<!-- 
+   <div id="card" class="container">
+   
+   <% foundIdeas.forEach(function(idea) { %>
+       
+       <div class="card bg-light text-center"  >
+         <p>idea by 
+          <a href="/user/<%= idea.author.id %>" >
+            <b><%= idea.author.username %></b>
+          </a>
+          </p>
+          <h2><%= idea.title %></h2>
+          <div class="card-body text-center">
+              <p class="card-text"><%=idea.description%></p>
+             
+              <br>
+              <a href="/ideas/<%=idea._id%>" class="btn btn-primary">viewIdea</a>
+          </div>
+       </div> 
+        <a href="/logout" class="btn btn-danger btn-lg">logOut</a> 
+
+     </div>
+
+
+  <% }) %>
+
+  -->
+
+
+
+<%- include ('../partials/footer') %>
