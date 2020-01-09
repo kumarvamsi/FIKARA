@@ -647,7 +647,8 @@ app.get("*",function(req,res){
 });
  
  //server setUp
- app.listen(3000,function(err,res){
+ var PORT = process.env.PORT || 3000;
+ app.listen(PORT,function(err,res){
 
     console.log("explodeApp started at 3000");
 
