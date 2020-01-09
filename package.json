@@ -4,8 +4,8 @@
   "description": "Explode is an app for sharing mobile and web app thoughts",
   "main": " app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "kumar vamsi",
   "license": "ISC",
