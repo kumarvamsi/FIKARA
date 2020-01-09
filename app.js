@@ -20,7 +20,8 @@
  passportLocalMongoose = require("passport-local-mongoose");   
 
   //database connection
- var db = mongoose.connect("mongodb://localhost/explodeApp",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
+  // mongodb://localhost/explodeApp
+ var db = mongoose.connect("mongodb://kumarvamsi:123@ds135760.mlab.com:35760/fikara",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
   if(!err){
       console.log("explodeApp connected to the database");
   } 
