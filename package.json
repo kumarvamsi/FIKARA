@@ -1,5 +1,5 @@
 {
-  "name": "explode",
+  "name": "fikara",
   "version": "1.0.0",
   "description": "Explode is an app for sharing mobile and web app thoughts",
   "main": " app.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "kumar vamsi",
+  "author": "kumarvamsi",
   "license": "ISC",
   "dependencies": {
     "async": "^3.1.0",
@@ -27,7 +27,5 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.1"
-  }
+  "devDependencies": {}
 }
