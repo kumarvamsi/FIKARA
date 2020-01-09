@@ -21,7 +21,7 @@
 
   //database connection
   // mongodb://localhost/explodeApp
- var db = mongoose.connect("mongodb://admin:admin123@ds135760.mlab.com:35760/fikara",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
+ var db = mongoose.connect("mongodb://admin:admin123@ds135760.mlab.com:35760/vamshi123",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
   if(!err){
       console.log("explodeApp connected to the database");
   } 
