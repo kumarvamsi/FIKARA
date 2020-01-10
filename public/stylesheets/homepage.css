@@ -24,24 +24,31 @@ body{
     box-shadow: -4px 3px 12px -3px rgba(0,0,0,0.75);
     
  } 
-
+.icon i{
+    font-size: 25px;
+}
 #navbarSupportedContent ul li a:hover{
     color: white;
     background-color: black;
 }
-.icon i{
-    font-size: 25px;
-}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
     #navbarSupportedContent ul{
         padding: 2px;
+    }
+    #navbarSupportedContent ul li a{
+        color:white;
+    }
+    #navbarSupportedContent ul li a:hover{
+        color: black;
+        background-color: white;
     }
     #navbarSupportedContent ul li {
         padding: 5px;
         text-align: center;
-        background-color: darkslategray;
+        background-color: black;
     };
+  
 };
 
 .search form input[type-text]{
@@ -377,11 +384,11 @@ p{
 .buttons{
     display: ruby;
     position: inherit;
-    top: -5px;
+    top: -55px;
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
    .profile img{
        width: 40%;
    }
@@ -391,6 +398,10 @@ p{
    .post{
        margin-top: 2px;
    }
+   .buttons{
+    top: -5px;
+    
+}
    
   
  };

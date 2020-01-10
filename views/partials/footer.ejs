@@ -20,12 +20,21 @@
                 <li class="list-inline-item">
                     <a href="/help">Help</a>
                 </li>
+                <% if(!currentUser){%>
                 <li class="list-inline-item">
                     <div class="register">
                         <a href="/register" >Register</a>
                     </div>
                    
                 </li>
+                <%}else{ %>
+                  <li class="list-inline-item">
+                    <div class="register">
+                        <a href="/ideas/new" >Get Started</a>
+                    </div>
+                   
+                </li>
+                <% } %>
             </ul>
          </div> 
          <div class="line">
@@ -73,7 +82,7 @@
         </li>
         <div class="Copyright">
             <P style="font-size: 15px;padding: 5px;">
-                @ 2020 Copyright : fikara.com
+              <i class="fa fa-copyright"></i> 2020 fikara.herokuapp.com
             </P>
       </ul>
       
