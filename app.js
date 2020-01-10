@@ -496,7 +496,7 @@ app.get('/forgot', function(req, res) {
           from: process.env.EMAIL,
           to: user.email,
           subject: 'FIKARA Password Reset',
-          text: 'You are receiving this because you have requested to reset you account password.\n\n' +
+          text: 'You are receiving this because you have requested to reset your account password.\n\n' +
             'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
             'http://' + req.headers.host + '/reset/' + token + '\n\n' +
             'If you did not request this, please ignore this email and your password will remain unchanged.\n'
@@ -567,7 +567,7 @@ app.get('/forgot', function(req, res) {
 
           from: 'kumarbvamsi@gmail.com',
           to: user.email,
-          subject: 'Your password has been changed',
+          subject: 'Your password has been changed - FIKARA',
           text: 'Hello,\n\n' +
             'This is a confirmation that the password for your account ' + user.email + ' has just been changed.\n'
         };

@@ -30,7 +30,7 @@
       <div class="showidea">
          <div class="ideadata">
             <h4 class="ideatitle"><%= idea.title %></h4><hr>
-            <i style="text-align: left;" class="description"><%=idea.created.toDateString() %></i>
+            <b style="text-align: left;" class="description"><%=idea.created.toDateString() %></b>
             <p class="description"><%=idea.description%></p>
             <a style="text-decoration: none;" href="/user/<%= idea.author.id %>">
                <p class="author"><span style="color:black">posted by</span> <b><%= idea.author.username %> </b></p>

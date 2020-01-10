@@ -42,8 +42,8 @@
                       <div class="viewtitle">
                         <p ><%= idea.title.substring(0,25) %></p><hr>
                       </div>
-                      <i style="font-weight: 600;"><%=idea.created.toDateString() %></i><br>
-                      <p class="card-text"><%=idea.description.substring(0,100)%></p>
+                      <b style="font-weight: 00;padding-left: 5px;"><%=idea.created.toDateString() %></b><br>
+                      <p><%=idea.description.substring(0,100)%></p>
                       <a href="/ideas/<%=idea._id%>" class="btn btn-outline-dark">viewIdea</a>
                 </div>
           </div> 

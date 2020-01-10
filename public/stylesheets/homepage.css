@@ -12,12 +12,15 @@ body{
 #navbarSupportedContent ul li{
     padding: 8px;
     font-size: 20px;
-    font-weight: 600;
-    
+    font-weight: 600;    
+}
+.signup li a{
+    color: white;
 }
 #navbarSupportedContent ul li a{
     color: black;
 }
+
 .signup li a:hover{
     color: white;
     background-color: black;
@@ -48,8 +51,12 @@ body{
         text-align: center;
         background-color: black;
     };
+    .signup li a{
+        color: white;
+    }
   
 };
+
 
 .search form input[type-text]{
     width: 20px;
@@ -58,7 +65,8 @@ body{
     background-color:#e31e1e;
     padding: 10px;
     text-align: center;
-    border-radius: 40px;
+    border-radius:40px;
+    color: white;
 }
 
 /* ========FOOTER CSS========= */
@@ -150,7 +158,6 @@ body{
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
-
 }
 .image a:hover{
     box-shadow: -4px 3px 15px -3px rgba(0,0,0,0.75);
@@ -159,6 +166,7 @@ body{
     .image a{
         padding: 4px;
         font-size: 10px;
+       
     }
     
 };
@@ -536,6 +544,7 @@ p{
     text-align: left;
     padding: 20px;
     font-size: 15px;
+    font-weight: ;
 }
 .ideatitle{
     background-color: black;
