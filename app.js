@@ -630,16 +630,16 @@ app.get('/forgot', function(req, res) {
  
 // footer routes
 app.get("/aboutus",function(req,res){
-  res.render("footer/aboutUs");
+  res.render("footer/aboutUs",{currentUser:req.user});
 }) 
 app.get("/contact",function(req,res){
-  res.render("footer/contact");
+  res.render("footer/contact",{currentUser:req.user});
 }) 
 app.get("/notes",function(req,res){
-  res.render("footer/notes");
+  res.render("footer/notes",{currentUser:req.user});
 })
 app.get("/help",function(req,res){
-  res.render("footer/help");
+  res.render("footer/help",{currentUser:req.user});
 })
 //error route
 app.get("*",function(req,res){
