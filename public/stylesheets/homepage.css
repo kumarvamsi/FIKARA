@@ -103,6 +103,9 @@ body{
 .footer-copyright {
     background-color:#291b1b;
 }
+.list-inline-item i{
+    color: white;
+}
 /* copy rights */
 .Copyright{
     position: relative;
