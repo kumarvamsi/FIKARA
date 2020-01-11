@@ -626,6 +626,9 @@ p{
     .aboutusdata1 p{
         padding: 20px
     }
+    .aboutusdata1 p{
+        font-size: 15px;  
+    }
    
   };
   /* contact CSS */
