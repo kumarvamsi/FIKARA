@@ -636,8 +636,15 @@ p{
       background-color: darksalmon;
   }
   .contactdetails p{
-      font-size: 20px;
+      font-size: 19px;
   }
+  @media only screen and (max-width: 500px) {
+   
+    .contactdetails p{
+        font-size: 12px;
+    }
+   
+  };
   /* notes CSS */
   .container{}
   .notes{
@@ -654,6 +661,7 @@ p{
   .notes p{
       font-weight: 500;
       letter-spacing: 1px;
+      font-size: 19px;
   }
   @media only screen and (max-width: 500px) {
    
@@ -662,6 +670,10 @@ p{
     }
     .notes h1{
         font-size: 20px;
+    }
+    .notes p{
+        
+        font-size: 12px;
     }
    
   };
@@ -686,10 +698,16 @@ p{
       font-weight: 600;
       padding: 5px;
   }
+  .helpdata p{
+      font-size: 19px;
+  }
   @media only screen and (max-width: 500px) {
    
     .helpdata{
         padding: 20px
+    }
+    .helpdata p{
+        font-size: 12px;
     }
    
   };
