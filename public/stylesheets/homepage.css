@@ -375,7 +375,7 @@ form{
     height: 410px;
 }
 .post h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .post p{
     font-size: 15px;
@@ -467,6 +467,21 @@ p{
 .post{
     height: 410px;
 }
+@media only screen and (max-width: 1000px) {
+    .post{
+        height: 600px;
+    }
+   
+   
+  };
+  @media only screen and (max-width: 850px) {
+    .post{
+        height: 600px;
+    }
+   
+    
+   
+  };
 .name{
     margin-bottom: 10px;
 }
