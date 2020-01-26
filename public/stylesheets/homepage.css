@@ -276,7 +276,6 @@ form{
  /* forgotpasswordpage CSS */
  .forgotform{
     padding:50px;
-
  }
  .forgotdata{
     background-color: white;
@@ -294,7 +293,6 @@ form{
  
  .forgotform{
      padding: 50px;
-  
      
  }
  .forgotdata button{
@@ -302,7 +300,7 @@ form{
  }
  @media only screen and (max-width: 500px) {
     .forgotdata{
-       
+        width: auto;
         margin-left: -25px;
         margin-right: -25px;
     }   
@@ -377,7 +375,7 @@ form{
     height: 410px;
 }
 .post h2{
-    font-size: 20px;
+    font-size: 25px;
 }
 .post p{
     font-size: 15px;
@@ -469,21 +467,6 @@ p{
 .post{
     height: 410px;
 }
-@media only screen and (max-width: 1000px) {
-    .post{
-        height: 600px;
-    }
-   
-   
-  };
-  @media only screen and (max-width: 850px) {
-    .post{
-        height: 600px;
-    }
-   
-    
-   
-  };
 .name{
     margin-bottom: 10px;
 }
@@ -498,7 +481,7 @@ p{
 }
 .viewtitle p{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
 }
 @media only screen and (max-width: 1000px) {
     .post{
