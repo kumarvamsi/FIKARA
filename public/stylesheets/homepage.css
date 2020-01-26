@@ -276,6 +276,7 @@ form{
  /* forgotpasswordpage CSS */
  .forgotform{
     padding:50px;
+
  }
  .forgotdata{
     background-color: white;
@@ -293,6 +294,7 @@ form{
  
  .forgotform{
      padding: 50px;
+  
      
  }
  .forgotdata button{
@@ -300,7 +302,7 @@ form{
  }
  @media only screen and (max-width: 500px) {
     .forgotdata{
-        width: auto;
+       
         margin-left: -25px;
         margin-right: -25px;
     }   
