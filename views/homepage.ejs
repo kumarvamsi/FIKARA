@@ -58,7 +58,7 @@
                     <% if(user.author.username === foundAuthor.username){ %>
                           <div class="col-md-3">
                                 <div class="post">
-                                      <h2><b><%= user.title.substring(0,25) %></b></h2><hr>
+                                      <p style="font-size: 20px;"><b><%= user.title.substring(0,25) %></b></p><hr>
                                       <b style="padding-left: 5px;"><%= user.created.toDateString() %></b>
                                       <p><%= user.description.substring(0,100) %></p>
                                       <br><br>
