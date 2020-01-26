@@ -465,7 +465,7 @@ p{
     text-align: center;
 }
 .post{
-    height: 410px;
+    height: auto;
 }
 .name{
     margin-bottom: 10px;
