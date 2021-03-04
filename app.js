@@ -23,7 +23,7 @@
   // mongodb://localhost/explodeApp
  var db = mongoose.connect("mongodb://admin:admin123@ds135818.mlab.com:35818/vamshi123",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
   if(!err){
-      console.log("explodeApp connected to the database");
+      console.log("FikaraApp connected to the database");
   } 
 })
 
